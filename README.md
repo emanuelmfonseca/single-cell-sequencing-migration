@@ -157,7 +157,7 @@ To run this project, you will need the following dependencies installed:
 
     ```bash
     git clone https://github.com/emanuelmfonseca/single-cell-sequencing-migration.git
-    cd sequencing-migration
+    cd single-cell-sequencing-migration
     ```
 
 3. Create and activate the Conda environment using the provided `environment.yml` file:

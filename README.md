@@ -123,7 +123,7 @@ This single-cell pipeline is designed to automate sequencing data processing usi
 
 ## Cost Estimate
 
-**Here are preliminary cost estimates for the key AWS services involved in the genomic pipeline, as calculated using the AWS Pricing Calculator:**
+**Here are preliminary cost estimates for the key AWS services involved in the single-cell pipeline, as calculated using the AWS Pricing Calculator:**
 
 | Service                    | Details                                                                                                         | Price per Run ($) | Value per Month ($) |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------|-------------------|---------------------|

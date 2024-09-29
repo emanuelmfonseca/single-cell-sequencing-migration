@@ -8,7 +8,7 @@ This repository contains a bioinformatics pipeline designed to process simulated
 - [AWS Architecture Overview](#aws-architecture-overview)
 - [Cost Estimate](#cost-estimate)
 - [Installation](#installation)
-- [Usage](#usage)
+- [Usage Guide](#usage-guide)
 - [Main Findings](#main-findings)
 - [Development and Testing Environment](#development-and-testing-environment)
 - [Contributing](#contributing)

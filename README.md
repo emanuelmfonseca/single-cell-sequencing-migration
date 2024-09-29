@@ -42,12 +42,12 @@ The primary analysis focuses on preparing raw single-cell RNA sequencing data fo
 - **Quality Control Metrics**
     - Cells are evaluated based on several key indicators to ensure data quality. Cells with too few genes detected likely result from insufficient sequencing depth, while those with too many genes may represent doublets or multiplets. Additionally, cells with high mitochondrial RNA content are flagged as potentially stressed or degraded, optimizing the dataset for reliable downstream analysis.
 
+- **Load and Process Data**
+    - Process the Cell Ranger output to create AnnData (H5AD) objects. This step prepares the data for advanced analysis.
+
 ### Secondary Analysis
 
 The secondary analysis builds on the results of the primary phase, involving deeper processing, normalization, scaling, and visualization of the single-cell RNA sequencing data. This stage ensures the data is ready for biological interpretation and further exploration.
-
-- **Load and Process Data**
-    - Process the Cell Ranger output to create AnnData (H5AD) objects. This step prepares the data for advanced analysis, including handling large datasets efficiently.
 
 - **Data Filtering**
     - Low-quality cells and genes are filtered out based on predefined criteria such as mitochondrial content and read counts, improving the dataset’s integrity.

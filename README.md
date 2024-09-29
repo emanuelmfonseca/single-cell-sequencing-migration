@@ -273,26 +273,31 @@ snakemake --cores 6
 2. **Total Counts**: Filtered cells display higher RNA counts and a more consistent distribution, removing outliers from low-quality cells.
 3. **Mitochondrial %**: Lower mitochondrial percentages in filtered cells suggest removal of stressed or dying cells.
 
-![qc_metrics_plot_filtered](https://github.com/user-attachments/assets/83895528-1cee-4641-8b89-f5b138127e98)
- - Filtered Data displays similar plots after filtering. Panel **a** presents the gene count distribution, panel **b** shows total RNA counts, and panel **c** illustrates mitochondrial percentages. Panel **d** shows the correlation between gene counts and total counts, while panel **e** presents the relationship between mitochondrial percentage and total RNA counts.
+- Filtered Data displays similar plots after filtering. Panel **a** presents the gene count distribution, panel **b** shows total RNA counts, and panel **c** illustrates mitochondrial percentages. Panel **d** shows the correlation between gene counts and total counts, while panel **e** presents the relationship between mitochondrial percentage and total RNA counts.
 
+![qc_metrics_plot_filtered](https://github.com/user-attachments/assets/83895528-1cee-4641-8b89-f5b138127e98)
+ 
 ### UMAP Clustering
 - UMAP emphasizes the global structure of the data, showing transitions between cell types. Cells are color-coded by type, and clusters indicate distinct but related populations. UMAP can highlight gradual changes, such as cell differentiation pathways.
 
-![umap_merged](https://github.com/user-attachments/assets/14c46ea5-1b4c-473e-b7dc-370c2f65ea77)
  - UMAP presents a UMAP projection, highlighting cellular diversity and clustering by cell type.
+
+![umap_merged](https://github.com/user-attachments/assets/14c46ea5-1b4c-473e-b7dc-370c2f65ea77)
 
 ### t-SNE Clustering
 - Cells cluster based on gene expression profiles, with distinct groups representing different immune cell types. t-SNE shows clear separation between clusters, suggesting high-resolution identification of individual populations in the dataset.
 
+- t-SNE shows a t-SNE plot clustering cells by type, providing a complementary view to the UMAP.
+
 ![t_sne_merged](https://github.com/user-attachments/assets/3e871ebd-b6af-4d61-97f9-c65a70e9f60d)
- - t-SNE shows a t-SNE plot clustering cells by type, providing a complementary view to the UMAP.
 
 ### Rank Genes by Cell Type
 - **Top Genes**: Each plot shows genes ranked by significance for identifying specific cell types. Top marker genes for each population indicate distinct expression profiles, providing clear differentiation between cell types (e.g., CD16+ NK Cells vs. other cells).
 
+- Ranked Genes displays ranked gene expression differences for each cell type compared to all other cells.
+
 ![rank_genes_groups_cell_type_merged](https://github.com/user-attachments/assets/98360dc5-8fbd-4404-9566-96dc0abc2c2f)
- - Ranked Genes displays ranked gene expression differences for each cell type compared to all other cells.
+
 ## Development and Testing Environment
 This pipeline was developed on a MacBook 2020 with an M1 chip. However, the Cell Ranger part of the pipeline was tested and run exclusively on a Linux machine, as Cell Ranger is only supported on Linux systems. The tutorial associated with this project was tested on a MacBook with the same configuration as the development environment.
 

@@ -24,7 +24,7 @@ This solution is ideal for automating large-scale single-cell sequencing project
 ## Single-Cell Pipeline Overview
 This pipeline is designed to process single-cell RNA sequencing (scRNA-seq) data, performing both primary (blue) and secondary (orange) analyses. Key tasks include alignment, quality control, and advanced downstream analysis like clustering and differential expression.
 
-![single-cell-pipeline](https://github.com/user-attachments/assets/12a51a3c-967d-4b75-bcb9-c3ed158dc2ad)
+![single-cell-pipeline](https://github.com/user-attachments/assets/f9e2c479-d0b6-457b-9fe6-8453e942e540)
 
 ### Primary Analysis
 

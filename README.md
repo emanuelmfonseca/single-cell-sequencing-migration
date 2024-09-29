@@ -214,7 +214,7 @@ snakemake --cores <number_of_cores>
 
 #### Example:
 
-If you want to run the pipeline using 4 CPU cores:
+If you want to run the pipeline using 6 CPU cores:
 
 ```bash
 snakemake --cores 6

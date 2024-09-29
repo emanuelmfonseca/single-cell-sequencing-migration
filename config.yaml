@@ -1,0 +1,24 @@
+# Config file for sequencing-migration project
+
+# Define the working directory where all project-related files are stored
+working_directory: "/Users/emanuelmfonseca/project/single-cell-sequencing-migration"
+
+# Set the number of sequencing runs that are performed per week.
+weekly_runs: 2
+
+# number of CPUs available for analysis
+ncores: 6
+
+# The expected number of cells in the single-cell RNA-seq dataset
+expected_cells: 1000
+
+# Path to the installed version of Cell Ranger
+cell_ranger_path: /softwares/cellranger-8.0.1
+
+# Single-cell RNA sequencing dataset
+sc_dataset_url: https://cf.10xgenomics.com/samples/cell-exp/3.0.0/pbmc_1k_v3/pbmc_1k_v3_fastqs.tar
+sc_dataset: pbmc_1k_v3_fastqs.tar
+
+# Reference genome dataset for single-cell RNA sequencing pipeline
+ref_dataset_url: https://cf.10xgenomics.com/supp/cell-exp/refdata-gex-GRCh38-2024-A.tar.gz
+ref_dataset: refdata-gex-GRCh38-2024-A.tar.gz

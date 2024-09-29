@@ -265,8 +265,9 @@ snakemake --cores 6
 2. **Total Counts**: Higher variability in total counts in unfiltered cells suggests the presence of poor-quality cells.
 3. **Mitochondrial %**: Unfiltered data includes cells with high mitochondrial expression, indicating potential cell stress or damage.
 
+- Unfiltered Data shows violin and scatter plots summarizing quality control metrics before filtering. Panel **a** presents gene count distribution, while panel **b** shows total RNA counts per cell. Panel **c** illustrates mitochondrial gene percentages. Panel **d** shows the correlation between gene counts and total RNA counts, and panel **e** presents the relationship between mitochondrial percentage and total RNA counts.
+
 ![qc_metrics_plot_unfiltered](https://github.com/user-attachments/assets/b40d3a51-ca07-487a-aaf0-d0a606d47715)
- - Unfiltered Data shows violin and scatter plots summarizing quality control metrics before filtering. Panel **a** presents gene count distribution, while panel **b** shows total RNA counts per cell. Panel **c** illustrates mitochondrial gene percentages. Panel **d** shows the correlation between gene counts and total RNA counts, and panel **e** presents the relationship between mitochondrial percentage and total RNA counts.
 
 ### Filtered QC Metrics
 1. **Number of Genes**: The filtered data shows a tighter range of gene counts per cell, centering around a higher median, indicating higher-quality cells.

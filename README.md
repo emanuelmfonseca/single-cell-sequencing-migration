@@ -75,8 +75,8 @@ The secondary analysis builds on the results of the primary phase, involving dee
 
 ## AWS Architecture Overview
 
-### **Genomic Data Processing Pipeline Using AWS with IAM and Quilt Integration**:
-This genomic pipeline is designed to automate sequencing data processing using AWS services, Quilt for data management, and secure access management through **IAM**. The workflow covers data ingestion, processing, and storage, managed entirely through AWS infrastructure with Quilt providing version control and data lineage.
+### **Single-Cell Data Processing Pipeline Using AWS with IAM and Quilt Integration**:
+This single-cell pipeline is designed to automate sequencing data processing using AWS services, Quilt for data management, and secure access management through **IAM**. The workflow covers data ingestion, processing, and storage, managed entirely through AWS infrastructure with Quilt providing version control and data lineage.
 
 ![aws-architecture-figure](https://github.com/user-attachments/assets/41d5386f-952e-4b98-8b2a-7cfd281f1066)
 

@@ -172,6 +172,7 @@ This will automatically install **Snakemake** and any other necessary packages s
 
 
 4. **Install Cell Ranger**:  
+   
    To process the single-cell RNA sequencing dataset, you will need to install **Cell Ranger**, a key tool developed by 10x Genomics for analyzing single-cell data. Please follow the detailed installation instructions provided by 10x Genomics:
 
    **[Cell Ranger Installation Guide](https://www.10xgenomics.com/support/software/cell-ranger/latest)**  

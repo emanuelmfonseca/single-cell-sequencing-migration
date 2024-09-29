@@ -182,10 +182,6 @@ This will automatically install **Snakemake** and any other necessary packages s
 
 ### 1. Data Preparation
 
-You will need to download the required dataset and install essential software before running the pipeline.
-
-#### Dataset Download
-
 The input dataset for this pipeline will be automatically downloaded from 10x Genomics. Specifically, the pipeline retrieves the **[1k PBMCs from a Healthy Donor (v3 Chemistry)](https://www.10xgenomics.com/datasets/1-k-pbm-cs-from-a-healthy-donor-v-3-chemistry-3-standard-3-0-0)** dataset. No manual download is required, as the pipeline includes a step to fetch this dataset during execution.
 
 

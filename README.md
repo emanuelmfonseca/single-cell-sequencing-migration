@@ -222,7 +222,7 @@ snakemake --cores 6
 
 - Ensure all required software, including Cell Ranger, is installed before running the pipeline.
 - Double-check the file paths and parameters in `config.yaml` to prevent issues related to misconfiguration.
-- Consider running the pipeline with a smaller dataset or fewer cores to test the setup before full execution.
+- Test the pipeline with a smaller dataset or fewer cores to validate the setup before full execution. Use Snakemake’s --dry-run to check dependencies and rule definitions without running the actual commands.
 
 ### Outputs
 

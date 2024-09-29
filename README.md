@@ -94,7 +94,7 @@ This single-cell pipeline is designed to automate sequencing data processing usi
 - The pipeline, running on EC2, downloads raw data from S3 via Quilt, processes it (e.g., quality control, alignment, variant calling), and tracks metadata updates.
 
 #### **4. Storing Outputs in S3 and Quilt**:
-- After processing, output files (e.g., BAM, VCF files) are uploaded back to **S3** and registered in **Quilt** for versioning and data management.
+- After processing, output files (e.g., BAM, H5AD files) are uploaded back to **S3** and registered in **Quilt** for versioning and data management.
 - The **EC2 instance**, using its **IAM role**, ensures that results are securely stored in both **S3** and Quilt for traceability.
 
 #### **5. Batch Processing**:

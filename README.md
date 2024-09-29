@@ -1,4 +1,4 @@
-# Genomic Sequencing Migration Pipeline
+# Single-Cell Sequencing Migration Pipeline
 
 This repository contains a bioinformatics pipeline designed to process simulated genomic sequencing data. The pipeline automates the processing of FASTQ files and manages the data using a cloud infrastructure. It is optimized for scalability and efficiency, reducing the need for manual intervention.
 
@@ -23,7 +23,6 @@ This solution is ideal for automating large-scale single-cell sequencing project
 ## Single-Cell Pipeline Overview
 The pipeline processes simulated sequencing data by performing primary (blue) and secondary (orange) analysis, including demultiplexing, alignment, and variant calling.
 
-![genomic-pipeline](https://github.com/user-attachments/assets/dd662004-dfd2-4e76-82a4-8e1f5528b86b)
 
 ### Primary Analysis
 

@@ -4,8 +4,6 @@ configfile: "config.yaml"
 # Rule to handle the full workflow, expanding to cover all runs
 rule all:
     input:
-        #expand("data/run_{run_id}/fastqs", run_id=range(1, config["weekly_runs"] + 1)),
-        #reference = "data/human_reference",
         normalized_h5ad="data/merged_runs/merged_adata_normalized.h5ad",
         annotate_h5ad = "data/merged_runs/merged_adata_annotate_h5ad.h5ad",
         qc_plot_unfiltered = "data/merged_runs/figures/qc_metrics_plot_unfiltered.png",

@@ -263,6 +263,35 @@ snakemake --cores 6
 
 ## Main Findings
 
+### Unfiltered QC Metrics
+1. **Number of Genes**: A broader distribution in unfiltered data shows more low-quality cells with fewer genes detected.
+2. **Total Counts**: Higher variability in total counts in unfiltered cells suggests the presence of poor-quality cells.
+3. **Mitochondrial %**: Unfiltered data includes cells with high mitochondrial expression, indicating potential cell stress or damage.
+
+![qc_metrics_plot_unfiltered](https://github.com/user-attachments/assets/b40d3a51-ca07-487a-aaf0-d0a606d47715)
+
+### Filtered QC Metrics
+1. **Number of Genes**: The filtered data shows a tighter range of gene counts per cell, centering around a higher median, indicating higher-quality cells.
+2. **Total Counts**: Filtered cells display higher RNA counts and a more consistent distribution, removing outliers from low-quality cells.
+3. **Mitochondrial %**: Lower mitochondrial percentages in filtered cells suggest removal of stressed or dying cells.
+
+![qc_metrics_plot_filtered](https://github.com/user-attachments/assets/83895528-1cee-4641-8b89-f5b138127e98)
+
+### UMAP Clustering
+- UMAP emphasizes the global structure of the data, showing transitions between cell types. Cells are color-coded by type, and clusters indicate distinct but related populations. UMAP can highlight gradual changes, such as cell differentiation pathways.
+
+![umap_merged](https://github.com/user-attachments/assets/14c46ea5-1b4c-473e-b7dc-370c2f65ea77)
+
+### t-SNE Clustering
+- Cells cluster based on gene expression profiles, with distinct groups representing different immune cell types. t-SNE shows clear separation between clusters, suggesting high-resolution identification of individual populations in the dataset.
+
+![t_sne_merged](https://github.com/user-attachments/assets/3e871ebd-b6af-4d61-97f9-c65a70e9f60d)
+
+### Rank Genes by Cell Type
+- **Top Genes**: Each plot shows genes ranked by significance for identifying specific cell types. Top marker genes for each population indicate distinct expression profiles, providing clear differentiation between cell types (e.g., CD16+ NK Cells vs. other cells).
+
+![rank_genes_groups_cell_type_merged](https://github.com/user-attachments/assets/98360dc5-8fbd-4404-9566-96dc0abc2c2f)
+
 ## Development and Testing Environment
 This pipeline was developed on a MacBook 2020 with an M1 chip. However, the Cell Ranger part of the pipeline was tested and run exclusively on a Linux machine, as Cell Ranger is only supported on Linux systems. The tutorial associated with this project was tested on a MacBook with the same configuration as the development environment.
 

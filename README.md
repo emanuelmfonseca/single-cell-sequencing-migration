@@ -91,7 +91,7 @@ This single-cell pipeline is designed to automate sequencing data processing usi
 
 #### **3. Running the Snakemake Pipeline on EC2**:
 - **Lambda**, using its designated **IAM role**, triggers the launch of an **EC2 instance** to execute the Snakemake pipeline. The **EC2 instance** is assigned an **IAM role** with permissions to access **S3** and **Quilt** for retrieving raw data, running the pipeline, and sending logs and metrics to **CloudWatch**.
-- The pipeline, running on EC2, downloads raw data from S3 via Quilt, processes it (e.g., quality control, alignment, variant calling), and tracks metadata updates.
+- The pipeline, running on EC2, downloads raw data from S3 via Quilt, processes it (e.g., quality control and alignment), and tracks metadata updates.
 
 #### **4. Storing Outputs in S3 and Quilt**:
 - After processing, output files (e.g., BAM, H5AD files) are uploaded back to **S3** and registered in **Quilt** for versioning and data management.

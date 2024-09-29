@@ -90,9 +90,9 @@ rule run_cell_ranger:
         # Expected number of cells, which will be used by Cell Ranger to optimize its cell-counting algorithm
         expected_cells = config["expected_cells"],
         # Number of cores to be used for the local computation
-        ncores = config["ncores"]
+        ncores = config["ncores"],
         # Path to the installed version of Cell Ranger
-        cell_ranger = config["cell_ranger_path"]
+        cell_ranger = config["cell_ranger_path"],
     conda:
         # Specify the conda environment for dependencies
         "environment.yml"
@@ -255,13 +255,31 @@ rule filter_hvg:
         # Execute the Python script with the input and output files
         "python {input.script} {input.normalized_h5ad} {output.hvg_h5ad} {output.hvg_plot}"
 
+
+# Rule to normalize the highly variable gene (HVG) filtered AnnData (H5AD) file
+rule scaling_data:
+    input:
+        # Path to the Python script responsible for scaling/normalizing the data
+        script = "scripts/scaling_data.py",
+        # Input file: the highly variable gene (HVG) filtered AnnData file
+        hvg_h5ad = "data/merged_runs/merged_adata_hvg.h5ad",
+    output:
+        # Output file: the path for the normalized/scaled AnnData file
+        scaled_h5ad = "data/merged_runs/merged_adata_scaled.h5ad"
+    conda:
+        # Specify the conda environment YAML file that contains the required dependencies
+        "environment.yml"
+    shell:
+        # Command to execute the Python script, passing the input and output files as arguments
+        "python {input.script} {input.hvg_h5ad} {output}"
+
 # Rule to perform PCA on the normalized AnnData (H5AD) file
 rule pca:
     input:
         # Path to the Python script responsible for performing PCA
         script="scripts/pca.py",
         # Input file: the normalized AnnData file
-        hvg_h5ad = "data/merged_runs/merged_adata_hvg.h5ad"
+        scaled_h5ad = "data/merged_runs/merged_adata_scaled.h5ad"
     output:
         # Output path for the PCA-processed AnnData file
         pca_h5ad = "data/merged_runs/merged_adata_pca.h5ad"
@@ -271,7 +289,7 @@ rule pca:
         "environment.yml"
     shell:
         # Execute the Python script with the input and output files
-        "python {input.script} {input.hvg_h5ad} {output}"
+        "python {input.script} {input.scaled_h5ad} {output}"
 
 
 # Rule to perform clustering and generate a UMAP plot

@@ -42,7 +42,7 @@ The primary analysis focuses on preparing raw single-cell RNA sequencing data fo
 
 ### Secondary Analysis
 
-The secondary analysis builds on the results of the primary phase, involving deeper processing, normalization, and visualization of the single-cell RNA sequencing data. This stage ensures the data is ready for biological interpretation and further exploration.
+The secondary analysis builds on the results of the primary phase, involving deeper processing, normalization, scaling, and visualization of the single-cell RNA sequencing data. This stage ensures the data is ready for biological interpretation and further exploration.
 
 - **Load and Process Data**
     - Process the Cell Ranger output to create AnnData (H5AD) objects. This step prepares the data for advanced analysis, including handling large datasets efficiently.
@@ -52,6 +52,15 @@ The secondary analysis builds on the results of the primary phase, involving dee
 
 - **Data Normalization**
     - Normalize the gene expression data to account for differences in sequencing depth across cells, preparing it for downstream analysis like clustering.
+
+- **Feature Selection**
+    - Identify highly variable genes across cells, focusing the analysis on genes that capture the most variance in the data. This helps to reduce noise and enhance the identification of key biological patterns.
+
+- **Data Scaling**
+    - Scale the gene expression data for each gene to have a mean of 0 and a standard deviation of 1. This step ensures that genes with different absolute expression levels contribute equally to downstream analyses, such as clustering and dimensionality reduction.
+
+- **Data Annotation**
+    - This step assigns cell type annotations to the filtered dataset using a custom Python script. It provides essential biological context, enabling downstream analyses such as clustering and differential expression.
 
 - **Dimensionality Reduction (PCA)**
     - Perform Principal Component Analysis (PCA) on the filtered and normalized data to reduce dimensionality, facilitating visualization and clustering.

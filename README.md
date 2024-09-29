@@ -164,7 +164,7 @@ To run this project, you will need the following dependencies installed:
 
     ```bash
     conda env create -f environment.yml
-    conda activate sequencing-migration
+    conda activate single-cell-sequencing-migration
     ```
 
 This will automatically install **Snakemake** and any other necessary packages specified in the environment configuration. **Snakemake** is a powerful workflow management system designed to create reproducible, scalable, and automated data analysis pipelines.

@@ -9,6 +9,7 @@ This repository contains a bioinformatics pipeline designed to process simulated
 - [Cost Estimate](#cost-estimate)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Main Findings](#main-findings)
 - [Development and Testing Environment](#development-and-testing-environment)
 - [Contributing](#contributing)
 - [License](#license)
@@ -226,9 +227,41 @@ snakemake --cores 6
 - Double-check the file paths and parameters in `config.yaml` to prevent issues related to misconfiguration.
 - Consider running the pipeline with a smaller dataset or fewer cores to test the setup before full execution.
 
-
 ### Outputs
 
+- The pipeline generates various outputs at each step, including:
+
+  - **Cell Ranger output files**: Processed single-cell sequencing data using Cell Ranger, including raw count matrices.
+    - Example: `data/run_1/cellranger/outs`.
+
+  - **Reference genome files**: Human reference genome used for alignment and analysis.
+    - Example: `data/human_reference/`.
+
+  - **Quality Control (QC) plots**: Visualizations of unfiltered and filtered QC metrics such as mitochondrial percentage and feature counts.
+    - Example: `data/merged_runs/figures/qc_metrics_plot_unfiltered.png`.
+    - Example: `data/merged_runs/figures/qc_metrics_plot_filtered.png`.
+
+  - **Normalized AnnData (H5AD) files**: Processed single-cell RNA-seq data after normalization.
+    - Example: `data/merged_runs/merged_adata_normalized.h5ad`.
+
+  - **Annotated AnnData (H5AD) files**: Annotated single-cell RNA-seq data based on cell types.
+    - Example: `data/merged_runs/merged_adata_annotate_h5ad.h5ad`.
+    - Example: `data/merged_runs/merged_PBMC_cell_type_annotations.csv`.
+
+  - **Clustered AnnData files**: Files containing clustering information for the cells.
+    - Example: `data/merged_runs/merged_adata_pca.h5ad`.
+
+  - **UMAP plot**: UMAP visualization of cell clusters based on transcriptomic data.
+    - Example: `data/merged_runs/figures/umap_merged.png`.
+
+  - **t-SNE plot**: t-SNE visualization of cell clusters for comparison with UMAP results.
+    - Example: `data/merged_runs/figures/t_sne_merged.png`.
+
+  - **Differential Expression (DE) plots**: Visualizations showing ranked gene groups after clustering.
+    - Example: `data/merged_runs/figures/rank_genes_groups_cell_type_merged.png`.
+
+
+## Main Findings
 
 ## Development and Testing Environment
 This pipeline was developed on a MacBook 2020 with an M1 chip. However, the Cell Ranger part of the pipeline was tested and run exclusively on a Linux machine, as Cell Ranger is only supported on Linux systems. The tutorial associated with this project was tested on a MacBook with the same configuration as the development environment.

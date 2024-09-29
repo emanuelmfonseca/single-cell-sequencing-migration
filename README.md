@@ -22,7 +22,7 @@ The pipeline processes 10x Genomics data using Cell Ranger for primary analysis 
 This solution is ideal for automating large-scale single-cell sequencing projects while ensuring reliable and reproducible results.
 
 ## Single-Cell Pipeline Overview
-This pipeline is designed to process single-cell RNA sequencing (scRNA-seq) data, performing both primary (blue) and secondary (orange) analyses. Key tasks include demultiplexing, alignment, quality control, and advanced downstream analysis like clustering and differential expression.
+This pipeline is designed to process single-cell RNA sequencing (scRNA-seq) data, performing both primary (blue) and secondary (orange) analyses. Key tasks include alignment, quality control, and advanced downstream analysis like clustering and differential expression.
 
 ![single-cell-pipeline](https://github.com/user-attachments/assets/12a51a3c-967d-4b75-bcb9-c3ed158dc2ad)
 

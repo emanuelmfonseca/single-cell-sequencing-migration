@@ -15,7 +15,7 @@ This repository contains a bioinformatics pipeline designed to process single-ce
 - [License](#license)
 
 ## Introduction
-This pipeline automates the migration and processing of single-cell RNA sequencing data, providing a scalable and efficient solution for handling large datasets. Built with Snakemake and designed to run on AWS infrastructure, it leverages cloud services to streamline data processing, reduce manual intervention, and optimize performance. 
+This pipeline automates the migration and processing of single-cell RNA sequencing data, providing a scalable and efficient solution for handling large datasets. Built with Snakemake and designed to run on AWS infrastructure, it leverages cloud services to streamline data processing, reduces manual intervention, and optimizes performance. 
 
 The pipeline processes 10x Genomics data using Cell Ranger for primary analysis and Scanpy for secondary analysis, including quality control, normalization, dimensionality reduction, clustering, and differential expression. It supports seamless integration with AWS services like S3 for data storage and AWS Batch for orchestration, enabling fast, parallel processing of genomic data.
 

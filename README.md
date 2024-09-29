@@ -78,7 +78,7 @@ The secondary analysis builds on the results of the primary phase, involving dee
 ### **Single-Cell Data Processing Pipeline Using AWS with IAM and Quilt Integration**:
 This single-cell pipeline is designed to automate sequencing data processing using AWS services, Quilt for data management, and secure access management through **IAM**. The workflow covers data ingestion, processing, and storage, managed entirely through AWS infrastructure with Quilt providing version control and data lineage.
 
-![aws-architecture](https://github.com/user-attachments/assets/f0bc26f7-4d9a-4993-92ae-d84b83bca13e)
+![aws-architecture](https://github.com/user-attachments/assets/6f6e4b11-f1b5-4628-abb2-92e1a7b7281f)
 
 #### **1. Data Ingestion into S3 and Quilt**:
 - Sequencing data is uploaded to an **S3 bucket** and registered in **Quilt** for data management. S3 serves as the central storage for raw sequencing data (e.g., FASTQ files), intermediate results, and final outputs, while Quilt ensures metadata tracking and versioning.

@@ -1,6 +1,6 @@
 # Single-Cell Sequencing Migration Pipeline
 
-This repository contains a bioinformatics pipeline designed to process simulated single-cell sequencing data. The pipeline automates the processing of FASTQ files and manages the data using a cloud infrastructure. It is optimized for scalability and efficiency, reducing the need for manual intervention.
+This repository contains a bioinformatics pipeline designed to process single-cell sequencing data. The pipeline automates the processing of FASTQ files and manages the data using a cloud infrastructure. It is optimized for scalability and efficiency, reducing the need for manual intervention.
 
 ## Table of Contents
 - [Introduction](#introduction)

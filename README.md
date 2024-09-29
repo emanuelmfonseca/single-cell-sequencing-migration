@@ -156,7 +156,7 @@ To run this project, you will need the following dependencies installed:
 2. Clone the repository and navigate to the project directory:
 
     ```bash
-    git clone https://github.com/emanuelmfonseca/sequencing-migration.git
+    git clone https://github.com/emanuelmfonseca/single-cell-sequencing-migration.git
     cd sequencing-migration
     ```
 

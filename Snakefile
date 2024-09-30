@@ -8,6 +8,7 @@ rule all:
         annotate_h5ad = "data/merged_runs/merged_adata_annotate_h5ad.h5ad",
         qc_plot_unfiltered = "data/merged_runs/figures/qc_metrics_plot_unfiltered.png",
         qc_plot_filtered = "data/merged_runs/figures/qc_metrics_plot_filtered.png",
+        hvg_plot = "data/merged_runs/figures/hvg_merged.png",
         umap = "data/merged_runs/figures/umap_merged.png",
         t_sne_plot = "data/merged_runs/figures/t_sne_merged.png",
         clustering = "data/merged_runs/clustering",
@@ -245,7 +246,6 @@ rule filter_hvg:
         # Output path for the filtered AnnData file and plot
         hvg_h5ad = "data/merged_runs/merged_adata_hvg.h5ad",
         hvg_plot = "data/merged_runs/figures/hvg_merged.png",
-
     conda:
         # Specify the conda environment for dependencies
         "environment.yml"

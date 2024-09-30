@@ -2,7 +2,6 @@ import scanpy as sc
 import sys
 import warnings
 import matplotlib.pyplot as plt
-import random
 
 warnings.filterwarnings("ignore")
 
@@ -15,10 +14,7 @@ def main(input_file, output_file, plot_output_file):
     
     # Detect highly variable genes (HVGs)
     sc.pp.highly_variable_genes(adata, min_mean=0.001, max_mean=3, min_disp=0.5)
-       
-    # Scale the data for later PCA
-    sc.pp.scale(adata, max_value=10)
-
+    
     # Save the filtered AnnData object with only highly variable genes
     adata[:, adata.var.highly_variable].write(output_file)
 

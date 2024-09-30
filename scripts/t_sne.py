@@ -7,9 +7,6 @@ import pandas as pd
 
 warnings.filterwarnings("ignore")
 
-#input_file = '/Users/emanuelmfonseca/project/single-cell-sequencing-migration/data/merged_runs/merged_adata_pca.h5ad'
-#annotation_file = '/Users/emanuelmfonseca/project/single-cell-sequencing-migration/data/merged_runs/merged_PBMC_cell_type_annotations.csv'
-
 def main(input_file, annotation_file, output_file, plot_output_file):
     # Load the preprocessed AnnData object
     adata = sc.read_h5ad(input_file)

@@ -282,6 +282,8 @@ snakemake --cores 6
 
 - This plot compares highly variable genes (HVGs) with non-highly variable genes, highlighting genes that show significant variability across cells. Identifying HVGs is critical because they are often the most informative for distinguishing between different cell types, states, or biological processes, making them key drivers in understanding cellular heterogeneity and functional diversity within a population.
 
+![hvg_merged](https://github.com/user-attachments/assets/9b5becf4-6a07-4128-bd69-5c945f6fdd8d)
+
 ### UMAP Clustering
 - UMAP emphasizes the global structure of the data, showing transitions between cell types. Cells are color-coded by type, and clusters indicate distinct but related populations. UMAP can highlight gradual changes, such as cell differentiation pathways.
 
